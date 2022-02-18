@@ -26,7 +26,7 @@ if __name__ == "__main__":
     ]
 
     def submission_to_record(s):
-        return (s.title, str(datetime.fromtimestamp(s.created_utc)), s.url)
+        return (s.title, str(datetime.fromtimestamp(s.created_utc).date()), s.url)
 
     records = [submission_to_record(s) for s in submissions]
     df = pd.DataFrame(records, columns=["title", "date", "url"])
