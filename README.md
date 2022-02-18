@@ -1,4 +1,4 @@
-# Reddit Scraper for Agile Garden Club
+# Reddit Scraper for AGC
 
 Simple Reddit Scraper to obtain results from a subreddit. Configure as needed to suit your purposes.
 
