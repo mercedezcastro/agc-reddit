@@ -31,4 +31,4 @@ if __name__ == "__main__":
     records = [submission_to_record(s) for s in submissions]
     df = pd.DataFrame(records, columns=["title", "date", "url"])
 
-    df.to_csv(db_filepath)
+    df.to_csv(db_filepath, index=False)
