@@ -16,7 +16,7 @@ from models import Subreddit
     default=True,
     help="Filter Subreddit titles by keywords listed in keywords.txt. Generates a separate CSV from SAVE_FILENAME with keywords prefix.",
 )
-@click.option("--query-until", nargs=3, type=int, help="Obtain submissions from up to YEAR(s) MONTH(s) DAY(s) ago from today's date. Example --query-until 1 5 7 obtains results from up to 1 year, 5 months, and 7 days ago.")
+@click.option("--query-until", nargs=3, type=click.Tuple([int, int, int]), help="Obtain submissions from up to YEAR(s) MONTH(s) DAY(s) ago from today's date. Example --query-until 1 5 7 obtains results from up to 1 year, 5 months, and 7 days ago.")
 def cli(subreddit: str, save_filepath: str, query_until, keywords: bool):
     save_filepath: Path = Path(save_filepath)
     save_folder = save_filepath.parents[0]
