@@ -11,7 +11,9 @@ certifi==2021.10.8
 charset-normalizer==2.0.12
     # via requests
 click==8.0.3
-    # via black
+    # via
+    #   -r requirements.in
+    #   black
 idna==3.3
     # via requests
 isort==5.10.1
@@ -19,38 +21,28 @@ isort==5.10.1
 mypy-extensions==0.4.3
     # via black
 numpy==1.22.2
-    # via pandas
+    # via
+    #   -r requirements.in
+    #   pandas
 pandas==1.4.1
     # via -r requirements.in
 pathspec==0.9.0
     # via black
 platformdirs==2.5.0
     # via black
-praw==7.5.0
-    # via -r requirements.in
-prawcore==2.3.0
-    # via praw
 python-dateutil==2.8.2
-    # via pandas
-python-dotenv==0.19.2
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   pandas
 pytz==2021.3
     # via pandas
 requests==2.27.1
-    # via
-    #   prawcore
-    #   update-checker
+    # via -r requirements.in
 six==1.16.0
     # via python-dateutil
 tomli==2.0.1
     # via black
-tqdm==4.62.3
-    # via -r requirements.in
 typing-extensions==4.1.1
     # via black
-update-checker==0.18.0
-    # via praw
 urllib3==1.26.8
     # via requests
-websocket-client==1.2.3
-    # via praw

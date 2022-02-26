@@ -1,6 +1,7 @@
 black
+click
 isort
+numpy
 pandas
-praw
-python-dotenv
-tqdm
+python-dateutil
+requests
